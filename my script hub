@@ -1,0 +1,241 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local GotoScriptsB = Instance.new("TextButton")
+local CloseB = Instance.new("TextButton")
+local TITLE = Instance.new("TextLabel")
+local ScriptsFrame = Instance.new("Frame")
+local InfYieldB = Instance.new("TextButton")
+local DarkDexB = Instance.new("TextButton")
+local NINJALEGENDSB = Instance.new("TextButton")
+local IceHubB = Instance.new("TextButton")
+local GoBackB = Instance.new("TextButton")
+local OpenMainFrame = Instance.new("ImageButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.Position = UDim2.new(0, 534, 0, 326)
+MainFrame.Size = UDim2.new(0, 471, 0, 263)
+MainFrame.Visible = false
+
+GotoScriptsB.Name = "GotoScriptsB"
+GotoScriptsB.Parent = MainFrame
+GotoScriptsB.AnchorPoint = Vector2.new(0.5, 0.5)
+GotoScriptsB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GotoScriptsB.Position = UDim2.new(0.0864012912, 0, 0.583482862, 0)
+GotoScriptsB.Size = UDim2.new(0, 83, 0, 50)
+GotoScriptsB.Font = Enum.Font.SourceSans
+GotoScriptsB.Text = "Go to scripts :D"
+GotoScriptsB.TextColor3 = Color3.fromRGB(0, 0, 0)
+GotoScriptsB.TextScaled = true
+GotoScriptsB.TextSize = 14.000
+GotoScriptsB.TextWrapped = true
+
+CloseB.Name = "CloseB"
+CloseB.Parent = MainFrame
+CloseB.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseB.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseB.Position = UDim2.new(1.09595537, 0, -0.106631204, 0)
+CloseB.Size = UDim2.new(0, 108, 0, 69)
+CloseB.Font = Enum.Font.SourceSans
+CloseB.Text = "X"
+CloseB.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseB.TextScaled = true
+CloseB.TextSize = 14.000
+CloseB.TextWrapped = true
+
+TITLE.Name = "TITLE"
+TITLE.Parent = ScreenGui
+TITLE.AnchorPoint = Vector2.new(0.5, 0.5)
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.Position = UDim2.new(0.546315312, 0, 0.379049629, 0)
+TITLE.Size = UDim2.new(0, 471, 0, 50)
+TITLE.Visible = false
+TITLE.Font = Enum.Font.SourceSans
+TITLE.Text = "TITLE"
+TITLE.TextColor3 = Color3.fromRGB(0, 0, 0)
+TITLE.TextScaled = true
+TITLE.TextSize = 14.000
+TITLE.TextWrapped = true
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = ScreenGui
+ScriptsFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsFrame.Position = UDim2.new(0, 534, 0, 326)
+ScriptsFrame.Size = UDim2.new(0, 471, 0, 263)
+ScriptsFrame.Visible = false
+
+InfYieldB.Name = "InfYieldB"
+InfYieldB.Parent = ScriptsFrame
+InfYieldB.AnchorPoint = Vector2.new(0.5, 0.5)
+InfYieldB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfYieldB.Position = UDim2.new(0.2106051, 0, 0.355346024, 0)
+InfYieldB.Size = UDim2.new(0, 200, 0, 50)
+InfYieldB.Font = Enum.Font.SourceSans
+InfYieldB.Text = "INF YIELD (any game)"
+InfYieldB.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfYieldB.TextScaled = true
+InfYieldB.TextSize = 14.000
+InfYieldB.TextWrapped = true
+
+DarkDexB.Name = "DarkDexB"
+DarkDexB.Parent = ScriptsFrame
+DarkDexB.AnchorPoint = Vector2.new(0.5, 0.5)
+DarkDexB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkDexB.Position = UDim2.new(0.785976648, 0, 0.355345994, 0)
+DarkDexB.Size = UDim2.new(0, 200, 0, 50)
+DarkDexB.Font = Enum.Font.SourceSans
+DarkDexB.Text = "Dark Dex (any game)"
+DarkDexB.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkDexB.TextScaled = true
+DarkDexB.TextSize = 14.000
+DarkDexB.TextWrapped = true
+
+NINJALEGENDSB.Name = "NINJALEGENDSB"
+NINJALEGENDSB.Parent = ScriptsFrame
+NINJALEGENDSB.AnchorPoint = Vector2.new(0.5, 0.5)
+NINJALEGENDSB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NINJALEGENDSB.Position = UDim2.new(0.783853531, 0, 0.716562748, 0)
+NINJALEGENDSB.Size = UDim2.new(0, 200, 0, 50)
+NINJALEGENDSB.Font = Enum.Font.SourceSans
+NINJALEGENDSB.Text = "NINJA LEGENDS SCRIPT"
+NINJALEGENDSB.TextColor3 = Color3.fromRGB(0, 0, 0)
+NINJALEGENDSB.TextScaled = true
+NINJALEGENDSB.TextSize = 14.000
+NINJALEGENDSB.TextWrapped = true
+
+IceHubB.Name = "IceHubB"
+IceHubB.Parent = ScriptsFrame
+IceHubB.AnchorPoint = Vector2.new(0.5, 0.5)
+IceHubB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IceHubB.Position = UDim2.new(0.208481967, 0, 0.69374907, 0)
+IceHubB.Size = UDim2.new(0, 200, 0, 50)
+IceHubB.Font = Enum.Font.SourceSans
+IceHubB.Text = "Ice Hub (BROOKHAVEN)"
+IceHubB.TextColor3 = Color3.fromRGB(0, 0, 0)
+IceHubB.TextScaled = true
+IceHubB.TextSize = 14.000
+IceHubB.TextWrapped = true
+
+GoBackB.Name = "GoBackB"
+GoBackB.Parent = ScriptsFrame
+GoBackB.AnchorPoint = Vector2.new(0.5, 0.5)
+GoBackB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GoBackB.Position = UDim2.new(0.208481953, 0, 0.906676769, 0)
+GoBackB.Size = UDim2.new(0, 200, 0, 50)
+GoBackB.Font = Enum.Font.SourceSans
+GoBackB.Text = "Go back :D"
+GoBackB.TextColor3 = Color3.fromRGB(0, 0, 0)
+GoBackB.TextScaled = true
+GoBackB.TextSize = 14.000
+GoBackB.TextWrapped = true
+
+OpenMainFrame.Name = "OpenMainFrame"
+OpenMainFrame.Parent = ScreenGui
+OpenMainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+OpenMainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenMainFrame.BackgroundTransparency = 1.000
+OpenMainFrame.Position = UDim2.new(0.179844141, 0, 0.938976467, 0)
+OpenMainFrame.Size = UDim2.new(0, 117, 0, 70)
+OpenMainFrame.Image = "rbxassetid://2737561909"
+
+-- Scripts:
+
+local function AOMDTP_fake_script() -- GotoScriptsB.LocalScript 
+	local script = Instance.new('LocalScript', GotoScriptsB)
+
+	---- VARIBLES
+	local Scripts = script.Parent.Parent.Parent.ScriptsFrame
+	local MainFrame = script.Parent.Parent.Parent.MainFrame
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		MainFrame.Visible = false
+		Scripts.Visible = true
+	end)
+end
+coroutine.wrap(AOMDTP_fake_script)()
+local function TUGHTXE_fake_script() -- CloseB.LocalScript 
+	local script = Instance.new('LocalScript', CloseB)
+
+	local TITLE = script.Parent.Parent.Parent.TITLE
+	local MainFrame = script.Parent.Parent.Parent.MainFrame
+	local OpenMain = script.Parent.Parent.Parent.OpenMainFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		MainFrame.Visible = false
+		TITLE.Visible = false
+		OpenMain.Visible = true
+	end)
+end
+coroutine.wrap(TUGHTXE_fake_script)()
+local function GKKQR_fake_script() -- GoBackB.LocalScript 
+	local script = Instance.new('LocalScript', GoBackB)
+
+	local scriptF = script.Parent.Parent.Parent.ScriptsFrame
+	local mainFrame = script.Parent.Parent.Parent.MainFrame
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		mainFrame.Visible = true
+		scriptF.Visible = false
+	end)
+end
+coroutine.wrap(GKKQR_fake_script)()
+local function MSTU_fake_script() -- OpenMainFrame.LocalScript 
+	local script = Instance.new('LocalScript', OpenMainFrame)
+
+	local MainFrame = script.Parent.Parent.MainFrame
+	local Title = script.Parent.Parent.TITLE
+	local OpenMain = script.Parent.Parent.OpenMainFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		OpenMain.Visible = false
+		Title = true
+		MainFrame.Visible = true
+	end)
+end
+coroutine.wrap(MSTU_fake_script)()
+
+
+
+
+
+
+-- SCRIPTS FOR THE SCRIPT BUTTONS.
+InfYieldB.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+-- YIELD DONE
+
+-- NINJA LEGENDS
+NINJALEGENDSB.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/romkich09/MainForRealium/main/ForRealium'),true))()
+end)
+
+--
+DarkDexB.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Shadow-Developer/Shadow/master/Scripts/DarkDexExplorer.lua"))()
+end)
+
+IceHubB.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+
+-- oh ya
